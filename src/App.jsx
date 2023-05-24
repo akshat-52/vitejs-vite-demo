@@ -16,7 +16,7 @@ const Post = ({ userId, body, title }) => {
         <h1 className="text-2xl font-bold">{title}</h1>
       </div>
       <div>
-        <p className="">{body}</p>
+        <p>{body}</p>
       </div>
     </div>
   );
@@ -51,17 +51,6 @@ const App = () => {
         ))}
       </div>
     </div>
-
-    // <div>
-    //   {posts.map((post) => (
-    //     <Post
-    //       key={post.id}
-    //       userId={post.userId}
-    //       body={post.body}
-    //       title={post.title}
-    //     />
-    //   ))}
-    // </div>
   );
 };
 
