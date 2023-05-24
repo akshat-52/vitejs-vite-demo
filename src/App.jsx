@@ -39,9 +39,29 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <h1>{posts}</h1>
+    <div className="bg-gray-700" text-gray-50>
+      <div className="p-10">
+        {posts.map((post) => (
+          <Post
+            key={post.id}
+            userId={post.userId}
+            body={post.body}
+            title={post.title}
+          />
+        ))}
+      </div>
     </div>
+
+    // <div>
+    //   {posts.map((post) => (
+    //     <Post
+    //       key={post.id}
+    //       userId={post.userId}
+    //       body={post.body}
+    //       title={post.title}
+    //     />
+    //   ))}
+    // </div>
   );
 };
 
